@@ -23,18 +23,17 @@ public class ClienteDAOImpl implements ClienteDAO {
 	}
 
 	public ClienteDAOImpl() {
-		em =  getEntityManager();
+		em = getEntityManager();
 	}
-	
-    private EntityManager getEntityManager() {
-        EntityManagerFactory factory = 
-        Persistence.createEntityManagerFactory("db_poo2_20191");
-        if (em == null) {
-        	em = factory.createEntityManager();
-        }
- 
-        return em;
-       }
+
+	private EntityManager getEntityManager() {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("db_poo2_20191");
+		if (em == null) {
+			em = factory.createEntityManager();
+		}
+
+		return em;
+	}
 
 	public void update(ClienteEntity cliente) {
 		em.getTransaction().begin();
