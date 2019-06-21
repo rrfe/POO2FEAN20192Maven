@@ -6,7 +6,7 @@ import br.com.fean.entity.ClienteEntity;
 
 public interface ClienteDAO {
 
-	public List<ClienteEntity> list();
+	public List<ClienteEntity> listarTodos();
 
 	public void create(ClienteEntity t);
 

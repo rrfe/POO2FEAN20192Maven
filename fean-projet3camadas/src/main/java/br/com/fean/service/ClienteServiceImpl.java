@@ -12,7 +12,7 @@ public class ClienteServiceImpl implements ClienteService {
 	
 	public List<ClienteEntity> list() {
 
-		return this.clienteDao.list();
+		return this.clienteDao.listarTodos();
 	}
 
 	public void create(ClienteEntity cliente) {
